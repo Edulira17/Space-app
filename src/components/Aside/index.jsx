@@ -1,36 +1,52 @@
-import styled from "styled-components"
+import {styled} from "styled-components";
+import ItemNavegacao from "./ItemNavegacao";
 
+const ListaEstilizada = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 212px;
+`;
 const Aside = () => {
-    const ListaEstilizada = styled.ul`
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 212px;
-    `
+  return (
+    <aside>
+      <nav>
+        <ListaEstilizada>
+          <ItemNavegacao
+            iconeAtivo="/icones/home-ativo.png"
+            iconeInativo="/icones/home-inativo.png"
+            ativo={true}
+          >
+            <a href="">Início</a>
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/mais-vistas-ativo.png"
+            iconeInativo="/icones/mais-vistas-inativo.png"
+          >
+            <a href="">Mais vistas</a>
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/mais-curtidas-ativo.png"
+            iconeInativo="/icones/mais-curtidas-inativo.png"
+          >
+            <a href="">Mais curtidas</a>
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/novas-ativo.png"
+            iconeInativo="/icones/novas-inativo.png"
+          >
+            <a href="">Novas</a>
+          </ItemNavegacao>
+          <ItemNavegacao
+            iconeAtivo="/icones/surpreenda-me-ativo.png"
+            iconeInativo="/icones/surpreenda-me-inativo.png"
+          >
+            <a href="">Surpreenda-me</a>
+          </ItemNavegacao>
+        </ListaEstilizada>
+      </nav>
+    </aside>
+  );
+};
 
-    return (
-        <aside>
-            <nav>
-                <ListaEstilizada>
-                    <li>
-                        <a href="">Início</a>
-                    </li>
-                    <li>
-                        <a href="">Mais vistas</a>
-                    </li>
-                    <li>
-                        <a href="">Mais curtidas</a>
-                    </li>
-                    <li>
-                        <a href="">Novas</a>
-                    </li>
-                    <li>
-                        <a href="">Surpreenda-me</a>
-                    </li>
-                </ListaEstilizada>
-            </nav>
-        </aside>
-    )
-}
-
-export default Aside
+export default Aside;
