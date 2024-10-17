@@ -7,6 +7,7 @@ const ItemListaEstilizada = styled.li`
   text-decoration: none;
   cursor: pointer;
   color: ${props => props.$ativo ? '#7b78e5' : '#D9D9D9'};
+  font-family: ${props => props.$ativo ? 'GandhiSansBold' : 'GandhiSansRegular'};
   display: flex;
   align-items: center;
   gap: 22px;
@@ -18,12 +19,11 @@ const ItemNavegacao = ({
   iconeInativo,
   ativo = false,
 }) => {
-  return (
-    <ItemListaEstilizada $ativo={ativo}>
+  return <ItemListaEstilizada $ativo={ativo}>
       <img src={ativo ? iconeAtivo : iconeInativo} alt="Icones" />
       {children}
     </ItemListaEstilizada>
-  );
+  ;
 };
 
 export default ItemNavegacao;
