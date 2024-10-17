@@ -17,31 +17,31 @@ const Aside = () => {
             iconeInativo="/icones/home-inativo.png"
             ativo={true}
           >
-            <a href="">Início</a>
+           Início
           </ItemNavegacao>
           <ItemNavegacao
             iconeAtivo="/icones/mais-vistas-ativo.png"
             iconeInativo="/icones/mais-vistas-inativo.png"
           >
-            <a href="">Mais vistas</a>
+            Mais vistas
           </ItemNavegacao>
           <ItemNavegacao
             iconeAtivo="/icones/mais-curtidas-ativo.png"
             iconeInativo="/icones/mais-curtidas-inativo.png"
           >
-            <a href="">Mais curtidas</a>
+            Mais curtidas
           </ItemNavegacao>
           <ItemNavegacao
             iconeAtivo="/icones/novas-ativo.png"
             iconeInativo="/icones/novas-inativo.png"
           >
-            <a href="">Novas</a>
+            Novas
           </ItemNavegacao>
           <ItemNavegacao
             iconeAtivo="/icones/surpreenda-me-ativo.png"
             iconeInativo="/icones/surpreenda-me-inativo.png"
           >
-            <a href="">Surpreenda-me</a>
+            Surpreenda-me
           </ItemNavegacao>
         </ListaEstilizada>
       </nav>
