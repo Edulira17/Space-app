@@ -2,15 +2,15 @@ import { styled } from "styled-components"
 
 const FigureEstilizada = styled.figure`
     background-image: ${props => `url(${props.$backgroundImage})`};
-    flex-grow: 1;
+    background-size: cover;
     background-repeat: no-repeat;
+    flex-grow: 1;
     display: flex;
     align-items: center;
     min-height: 328px;
     margin: 0;
     border-radius: 20px;
     max-width: 100%;
-    background-size: cover;
 `
 
 const TituloEstilizado = styled.h1`
@@ -22,10 +22,12 @@ const TituloEstilizado = styled.h1`
     padding: 0 64px;
 `
 
-const Banner = ({texto, backgroundImage}) => {
-    return (<FigureEstilizada $backgroundImage={backgroundImage}>
-        <TituloEstilizado>{texto}</TituloEstilizado>
-    </FigureEstilizada>)
+const Banner = ({ texto, backgroundImage }) => {
+    return (
+        <FigureEstilizada $backgroundImage={backgroundImage}>
+            <TituloEstilizado>{texto}</TituloEstilizado>
+        </FigureEstilizada>
+    )
 }
 
 export default Banner
