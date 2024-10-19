@@ -1,17 +1,18 @@
+import styled from "styled-components"
 
-const Imagem = () => {
+const FigureEstilizada = styled.figure` 
+  /* width: ${(props) => (props.$expandida ? '90%' : '460px')}; */
+
+`
+
+const Imagem = ({foto, expandida = false}) => {
   return (
-    <figure>
-        <img src="" alt="" />
-        <figcaption>
-            <h3>Titulo</h3>
-            <footer>
-                <p>fonte</p>
-                <button>Favorito</button>
-                <button>Maximar</button>
-            </footer>
-        </figcaption>
-    </figure>
+    <FigureEstilizada $expandida={expandida} id={`foto-${foto.id}`}>
+      <img src={foto.path} alt={foto.alt} />
+      <figcaption>
+          <h3>{foto.titulo}</h3>
+      </figcaption>
+    </FigureEstilizada>
   )
 }
 

@@ -21,7 +21,8 @@ const Galeria = ({ fotos = [] }) => {
         <SectionFluid>
           <Titulo>Navegue pela galeria</Titulo>
           <ul>
-            {fotos.map(foto => <li>{foto.titulo}</li>)}
+            {/* {fotos.map(foto => <li>{foto.titulo}</li>)} */}
+            
           </ul>
         </SectionFluid>
         <Populares />
