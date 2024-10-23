@@ -28,7 +28,6 @@ const Botao = styled.button`
   cursor: pointer;
   width: 100%;
   margin-top: 16px;
-
 `
 
 const Populares = () => {
